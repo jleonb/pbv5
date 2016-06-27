@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
  
   def after_sign_in_path_for(user)
-    current_user_path
+    user_path(current_user) #your path
   end
 
   def after_sign_in_path_for(admin)
