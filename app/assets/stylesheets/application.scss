@@ -1,0 +1,7 @@
+@import "materialize/components/color";
+$primary-color: color("indigo", "darken-4") !default;
+@import "materialize";
+@import 'slick';
+@import 'estilo';
+@import "font-awesome-sprockets";
+@import "font-awesome";

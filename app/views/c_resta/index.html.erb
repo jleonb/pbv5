@@ -1,0 +1,30 @@
+<div id="slider_restaurants">
+  <% @slider_restum.each do |slider_resta| %>
+      <a href="<%= slider_resta.link %>"><img src="<%= slider_resta.img.url(:large) %>" class="responsive-img"></a>
+  <% end %>
+</div>
+
+<br>
+
+<div class="row">
+  <% @c_restum.each do |c_resta| %>
+      <div class="col s6 center">
+        <%= link_to c_resta do %>
+            <a href="<%= c_resta.link %>"><img src="<%= c_resta.img.url(:large) %>" alt="" class="responsive-img"></a>
+        <% end %>
+      </div>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#slider_restaurants').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      draggable: true,
+      mobileFirst: true,
+      responsive: true,
+    });
+  });
+</script>

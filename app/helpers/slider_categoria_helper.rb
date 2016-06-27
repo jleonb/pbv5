@@ -1,0 +1,2 @@
+module SliderCategoriaHelper
+end

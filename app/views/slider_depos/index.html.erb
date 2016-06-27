@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Slider Depos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Img</th>
+      <th>Link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @slider_depos.each do |slider_depo| %>
+      <tr>
+        <td><%= slider_depo.img %></td>
+        <td><%= slider_depo.link %></td>
+        <td><%= link_to 'Show', slider_depo %></td>
+        <td><%= link_to 'Edit', edit_slider_depo_path(slider_depo) %></td>
+        <td><%= link_to 'Destroy', slider_depo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Slider depo', new_slider_depo_path %>

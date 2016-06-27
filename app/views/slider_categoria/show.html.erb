@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+
+<p>
+  <%= image_tag @slider_categorium.img.url (:thumb) %>
+</p>
+<p>
+  <strong>Categoría:</strong>
+  <%= @slider_categorium.categoria %>
+</p>
+<p>
+  <strong>Link:</strong>
+  <%= @slider_categorium.link %>
+</p>
+
+<%= link_to 'Edit', edit_slider_categorium_path(@slider_categorium) %> |
+<%= link_to 'Back', slider_categoria_path %>
+
+</div>

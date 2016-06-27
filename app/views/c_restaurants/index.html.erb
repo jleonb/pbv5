@@ -1,0 +1,38 @@
+<div id="slider_restaurants">
+  <% @slider_restaurants.each do |slider_restaurant| %>
+      <a href="<%= slider_dental.link %>"><img src="<%= slider_dental.img.url(:large) %>" class="responsive-img"></a>
+  <% end %>
+</div>
+
+<br>
+
+<div class="row">
+  <% @c_dentals.each do |c_dental| %>
+      <div class="col s6 center">
+        <%= link_to c_dental do %>
+            <a href="<%= c_dental.link %>"><img src="<%= c_dental.img.url(:large) %>" alt="" class="responsive-img"></a>
+        <% end %>
+      </div>
+  <% end %>
+</div>
+
+<br>
+
+<div class="center">
+  <%= link_to estandars_path do %>
+      <span class="waves-effect waves-light btn"><i class="material-icons left">replay</i>VOLVER A TODOS LOS BENEFICIOS</span>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#slider_restaurants').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      draggable: true,
+      mobileFirst: true,
+      responsive: true,
+    });
+  });
+</script>

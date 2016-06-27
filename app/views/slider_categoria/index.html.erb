@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+
+<div class="center">
+  <h5>CARRUSELES CATEGORIAS</h5>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Imagen</th>
+      <th>Categoría</th>
+      <th>Link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @slider_categoria.each do |slider_categorium| %>
+      <tr>
+        <td><%= image_tag slider_categorium.img.url(:thumb) %></td>
+        <td><%= slider_categorium.categoria %></td>
+        <td><%= slider_categorium.link %></td>
+        <td><%= link_to 'Show', slider_categorium %></td>
+        <td><%= link_to 'Edit', edit_slider_categorium_path(slider_categorium) %></td>
+        <td><%= link_to 'Destroy', slider_categorium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+  <%= link_to new_slider_categorium_path do %>
+      <span class="waves-effect waves-light btn"><i class="material-icons left">add</i>NUEVO</span>
+  <% end %>
+
+</div>

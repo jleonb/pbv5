@@ -1,0 +1,25 @@
+<%= form_for @slider_bell, html: { multipart: true } do |f| %>
+  <% if @slider_bell.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@slider_bell.errors.count, "error") %> prohibited this slider_bell from being saved:</h2>
+
+      <ul>
+      <% @slider_bell.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :img %><br>
+    <%= f.file_field :img %>
+  </div>
+  <div class="field">
+    <%= f.label :link %><br>
+    <%= f.text_field :link %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

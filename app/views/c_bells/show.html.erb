@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Img:</strong>
+  <%= image_tag @c_bell.img.url(:thumb), :class => "responsive-img" %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @c_bell.link %>
+</p>
+
+<%= link_to 'Edit', edit_c_bell_path(@c_bell) %> |
+<%= link_to 'Back', c_bells_path %>

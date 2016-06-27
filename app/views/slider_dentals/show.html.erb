@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @slider_dental.name %>
+</p>
+
+<p>
+  <%= image_tag @slider_dental.img.url(:thumb) %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @slider_dental.link %>
+</p>
+
+  <%= link_to edit_slider_dental_path(@slider_dental) do %>
+      <span class="waves-effect waves-light btn"><i class="material-icons left">edit</i>EDITAR</span>
+  <% end %>
+
+  <%= link_to slider_dentals_path do %>
+      <span class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>ATRAS</span>
+  <% end %>
+
+</div>
+
+

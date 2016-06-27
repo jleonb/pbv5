@@ -1,0 +1,2 @@
+module SliderDeposHelper
+end

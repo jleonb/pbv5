@@ -1,0 +1,30 @@
+<div id="slider_dental">
+  <% @slider_depos.each do |slider_depo| %>
+      <a href="<%= slider_depo.link %>"><img src="<%= slider_depo.img.url(:large) %>" class="responsive-img"></a>
+  <% end %>
+</div>
+
+<br>
+
+<div class="row">
+  <% @c_depos.each do |c_depo| %>
+      <div class="col s6 center">
+        <%= link_to c_depo do %>
+            <a href="<%= c_depo.link %>"><img src="<%= c_depo.img.url(:large) %>" alt="" class="responsive-img"></a>
+        <% end %>
+      </div>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#slider_dental').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      draggable: true,
+      mobileFirst: true,
+      responsive: true,
+    });
+  });
+</script>

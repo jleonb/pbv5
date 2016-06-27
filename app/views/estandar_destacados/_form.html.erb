@@ -1,0 +1,29 @@
+<%= form_for @estandar_destacado, html: { multipart: true } do |f| %>
+  <% if @estandar_destacado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@estandar_destacado.errors.count, "error") %> prohibited this estandar_destacado from being saved:</h2>
+
+      <ul>
+      <% @estandar_destacado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :img %><br>
+    <%= f.file_field :img %>
+  </div>
+  <div class="field">
+    <%= f.label :link %><br>
+    <%= f.text_field :link %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+
+

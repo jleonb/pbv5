@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+
+<div class="center">
+  <h5>SLIDER DENTAL</h5>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Imagen</th>
+      <th>Nombre</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @slider_dentals.each do |slider_dental| %>
+      <tr>
+        <td><%= image_tag slider_dental.img.url (:thumb) %></td>
+        <td><%= slider_dental.name %></td>
+        <td><%= slider_dental.link %></td>
+        <td><%= link_to 'Show', slider_dental %></td>
+        <td><%= link_to 'Edit', edit_slider_dental_path(slider_dental) %></td>
+        <td><%= link_to 'Destroy', slider_dental, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to new_slider_dental_path do %>
+    <span class="waves-effect waves-light btn"><i class="material-icons left">add</i>NUEVO</span>
+<% end %>
+
+</div>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Slider Restaurants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Img</th>
+      <th>Link.string</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @slider_restaurants.each do |slider_restaurant| %>
+      <tr>
+        <td><%= slider_restaurant.img %></td>
+        <td><%= slider_restaurant.link.string %></td>
+        <td><%= link_to 'Show', slider_restaurant %></td>
+        <td><%= link_to 'Edit', edit_slider_restaurant_path(slider_restaurant) %></td>
+        <td><%= link_to 'Destroy', slider_restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Slider restaurant', new_slider_restaurant_path %>

@@ -1,0 +1,10 @@
+<br>
+<div class="row">
+  <% @estandars.each do |estandar| %>
+      <div class="col s6 center">
+        <%= link_to estandar do %>
+          <img src="<%= estandar.caluga.url(:large) %>" alt="" class="responsive-img">
+        <% end %>
+      </div>
+    <% end %>
+</div>

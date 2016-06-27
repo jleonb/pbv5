@@ -1,0 +1,2 @@
+module SliderRestaHelper
+end

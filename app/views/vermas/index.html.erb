@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Vermas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vermas.each do |verma| %>
+      <tr>
+        <td><%= link_to 'Show', verma %></td>
+        <td><%= link_to 'Edit', edit_verma_path(verma) %></td>
+        <td><%= link_to 'Destroy', verma, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Verma', new_verma_path %>

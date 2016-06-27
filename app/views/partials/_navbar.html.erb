@@ -1,0 +1,74 @@
+ <nav class="grey lighten-5">
+    <div class="nav-wrapper">
+
+      <%= link_to root_path do %>
+	      <%= image_tag "logo_pb.png", :width => "140", :alt => "logo", :class => "brand-logo right" %>
+      <% end %>
+
+
+      <a href="#" data-activates="mobile-demo" class="button-collapse grey-text text-darken-2"><i class="material-icons">menu</i></a>
+
+      <ul class="side-nav" id="mobile-demo">
+
+
+
+      <% if user_signed_in? %>
+        <li>
+          <%= link_to "#mi_credencial", class: "modal-trigger"  do %>
+              <i class="material-icons left">picture_in_picture</i>Mi Credencial
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "#newsletter", class: "modal-trigger"  do %>
+              <i class="material-icons left">dashboard</i>Mis Noticias
+          <% end %>
+        </li>
+        <li>
+          <%= link_to user_path(current_user) do %>
+              <i class="material-icons left">turned_in</i>Mis Beneficios
+          <% end %>
+        </li>
+        <li>
+          <%= link_to destroy_user_session_path, :method => :delete do %>
+                <i class="material-icons left">arrow_back</i></span>Salir
+          <% end %>
+        </li>
+      <% else %>
+        <li><a href="/users/sign_in"><i class="material-icons left">account_circle</i>Ingresar</a></li>
+      <% end %>
+        <li class="divider"></li>
+        <li>
+          <%= link_to estandars_path do %>
+              <i class="material-icons left">view_module</i> Ver Todos
+          <% end %>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <%= link_to c_bells_path do %>
+              <i class="material-icons left">hot_tub</i> Belleza
+          <% end %>
+        </li>
+        <li>
+          <%= link_to c_dentals_path do %>
+              <i class="material-icons left">airline_seat_recline_extra</i> Dental
+          <% end %>
+        </li>
+        <li>
+          <%= link_to c_depos_path do %>
+              <i class="material-icons left">directions_bike</i> Deportes
+          <% end %>
+        </li>
+        <li>
+          <%= link_to c_restaurants_path do %>
+              <i class="material-icons left">restaurant</i> Restaurants
+          <% end %>
+        </li>
+        <li>
+          <%= link_to c_servs_path do %>
+              <i class="material-icons left">layers</i> Servicios
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </nav>
+

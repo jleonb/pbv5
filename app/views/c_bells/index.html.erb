@@ -1,0 +1,38 @@
+<div id="slider_belleza">
+  <% @slider_bells.each do |slider_bell| %>
+      <a href="<%= slider_bell.link %>"><img src="<%= slider_bell.img.url(:large) %>" class="responsive-img"></a>
+  <% end %>
+</div>
+
+<br>
+
+<div class="row">
+  <% @c_bells.each do |c_bell| %>
+      <div class="col s6 center">
+        <%= link_to c_bell do %>
+            <a href="<%= c_bell.link %>"><img src="<%= c_bell.img.url(:large) %>" alt="" class="responsive-img"></a>
+        <% end %>
+      </div>
+  <% end %>
+</div>
+
+<br>
+
+<div class="center">
+  <%= link_to estandars_path do %>
+      <span class="waves-effect waves-light btn"><i class="material-icons left">replay</i>VOLVER A TODOS LOS BENEFICIOS</span>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#slider_belleza').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      draggable: true,
+      mobileFirst: true,
+      responsive: true,
+    });
+  });
+</script>

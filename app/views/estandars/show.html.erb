@@ -1,0 +1,95 @@
+<div class="container">
+
+  <h4>
+    <%= @estandar.nombre %>
+  </h4>
+
+  <p>
+    <%= simple_format(@estandar.descripcion) %>
+  </p>
+
+  <p>
+    <i class="material-icons left indigo-text text-darken-3">location_on</i>
+    <%= @estandar.direccion %>
+  </p>
+
+  <p>
+    <i class="material-icons left indigo-text text-darken-3">phone</i>
+    <a href="tel:+56<%= @estandar.telefono %>"><%= @estandar.telefono %></a>
+  </p>
+
+  <p>
+    <i class="material-icons left indigo-text text-darken-3">email</i>
+    <a href="mailto:<%= @estandar.correo %>"><%= @estandar.correo %></a>
+  </p>
+
+  <p>
+    <i class="material-icons left indigo-text text-darken-3">language</i>
+    <a href="http://<%= @estandar.web %>"><%= @estandar.web %></a>
+  </p>
+
+  <p>
+    <iframe src="<%= @estandar.mapa %>" frameborder="0" width="100%"></iframe>
+  </p>
+
+  <p>
+    <i class="fa fa-facebook-square fa-lg fa-fw indigo-text text-darken-3" aria-hidden="true"></i>
+    <a href="http://www.facebook.com/<%= @estandar.facebook %>"><%= @estandar.facebook %></a>
+  </p>
+
+  <p>
+    <i class="fa fa-twitter fa-lg fa-fw indigo-text text-darken-3" aria-hidden="true"></i>
+    <a href="https://twitter.com/<%= @estandar.twitter %>"><%= @estandar.twitter %></a>
+  </p>
+
+  <p>
+    <i class="fa fa-instagram fa-lg fa-fw indigo-text text-darken-3" aria-hidden="true"></i>
+    <a href="https://instagram.com/<%= @estandar.instagram %>"><%= @estandar.instagram %></a>
+  </p>
+
+
+  <div class="center">
+    <p>
+      <img src="<%= @estandar.img1.url (:large) %>" class="responsive-img" alt="img">
+    </p>
+
+    <p>
+      <img src="<%= @estandar.img2.url (:large) %>" class="responsive-img" alt="img">
+    </p>
+
+    <p>
+      <img src="<%= @estandar.img3.url (:large) %>" class="responsive-img" alt="img">
+    </p>
+
+    <p>
+      <img src="<%= @estandar.img4.url (:large) %>" class="responsive-img" alt="img">
+    </p>
+
+    <p>
+      <img src="<%= @estandar.img5.url (:large) %>" class="responsive-img" alt="img">
+    </p>
+  </div>
+
+
+
+
+<div class="center">
+  <%= link_to estandars_path do %>
+      <span class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>ATRAS</span>
+  <% end %>
+</div>
+
+  <br>
+
+
+  <div class="center">
+  <%= link_to edit_estandar_path(@estandar) do %>
+      <span class="waves-effect waves-light btn"><i class="material-icons left">edit</i>EDITAR</span>
+  <% end %>
+  </div>
+
+
+
+</div>
+
+

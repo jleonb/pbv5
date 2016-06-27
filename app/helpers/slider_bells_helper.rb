@@ -1,0 +1,2 @@
+module SliderBellsHelper
+end

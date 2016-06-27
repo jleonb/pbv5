@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <strong>N contrato:</strong>
+  <%= @institucion.n_contrato %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @institucion.nombre %>
+</p>
+
+<p>
+  <strong>Rut:</strong>
+  <%= @institucion.rut %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @institucion.direccion %>
+</p>
+
+<p>
+  <strong>Comuna:</strong>
+  <%= @institucion.comuna %>
+</p>
+
+<p>
+  <strong>Ciudad:</strong>
+  <%= @institucion.ciudad %>
+</p>
+
+<p>
+  <strong>Contacto:</strong>
+  <%= @institucion.contacto %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @institucion.telefono %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @institucion.email %>
+</p>
+
+
+
+
+<%= link_to 'Edit', edit_institucion_path(@institucion) %> |
+<%= link_to 'Back', institucions_path %>

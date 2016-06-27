@@ -1,0 +1,25 @@
+<%= form_for @c_bell, url: c_bells_path, html: { multipart: true } do |f| %>
+  <% if @c_bell.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@c_bell.errors.count, "error") %> prohibited this c_bell from being saved:</h2>
+
+      <ul>
+      <% @c_bell.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :img %><br>
+    <%= f.file_field :img %>
+  </div>
+  <div class="field">
+    <%= f.label :link %><br>
+    <%= f.text_field :link %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

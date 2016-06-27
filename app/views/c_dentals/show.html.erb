@@ -1,0 +1,17 @@
+<div class="container">
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <%= image_tag @c_dental.img.url(:thumb), :class => "responsive-img" %>
+  </p>
+
+  <p>
+    <strong>Link:</strong>
+    <%= @c_dental.link %>
+  </p>
+
+  <%= link_to 'Edit', edit_c_dental_path(@c_dental) %> |
+  <%= link_to 'Back', c_dentals_path %>
+
+</div>

@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+
+
+
+<h4 class="center">CONVENIOS DESTACADOS</h4>
+
+<table>
+  <tbody>
+    <% @estandar_destacados.each do |estandar_destacado| %>
+      <tr>
+        <td><%= image_tag estandar_destacado.img.url(:thumb) %></td>
+        <td><%= estandar_destacado.link %></td>
+        <td><%= link_to 'Ver', estandar_destacado %></td>
+        <td><%= link_to 'Editar', edit_estandar_destacado_path(estandar_destacado) %></td>
+        <td><%= link_to 'Eliminar', estandar_destacado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Convenio Destacado', new_estandar_destacado_path %>
+
+</div>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>N contrato:</strong>
+  <%= @newsletter.n_contrato %>
+</p>
+
+<p>
+  <strong>Img:</strong>
+  <%= @newsletter.img %>
+</p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @newsletter.video %>
+</p>
+
+<%= link_to 'Edit', edit_newsletter_path(@newsletter) %> |
+<%= link_to 'Back', newsletters_path %>

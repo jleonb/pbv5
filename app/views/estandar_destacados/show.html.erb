@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <%= image_tag @estandar_destacado.img.url(:large), :class => "responsive-img" %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @estandar_destacado.link %>
+</p>
+
+<%= link_to 'Edit', edit_estandar_destacado_path(@estandar_destacado) %> |
+<%= link_to 'Back', estandar_destacados_path %>
