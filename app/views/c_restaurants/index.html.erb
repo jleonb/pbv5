@@ -1,16 +1,16 @@
 <div id="slider_restaurants">
   <% @slider_restaurants.each do |slider_restaurant| %>
-      <a href="<%= slider_dental.link %>"><img src="<%= slider_dental.img.url(:large) %>" class="responsive-img"></a>
+      <a href="<%= slider_restaurant.link %>"><img src="<%= slider_restaurant.img.url(:large) %>" class="responsive-img"></a>
   <% end %>
 </div>
 
 <br>
 
 <div class="row">
-  <% @c_dentals.each do |c_dental| %>
+  <% @c_restaurants.each do |c_restaurant| %>
       <div class="col s6 center">
         <%= link_to c_dental do %>
-            <a href="<%= c_dental.link %>"><img src="<%= c_dental.img.url(:large) %>" alt="" class="responsive-img"></a>
+            <a href="<%= c_restaurant.link %>"><img src="<%= c_restaurant.img.url(:large) %>" alt="" class="responsive-img"></a>
         <% end %>
       </div>
   <% end %>

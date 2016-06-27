@@ -5,6 +5,8 @@ class CServsController < ApplicationController
   # GET /c_servs.json
   def index
     @c_servs = CServ.all
+    @slider_servs = SliderServ.all
+    @estandars = Estandar.all
   end
 
   # GET /c_servs/1
