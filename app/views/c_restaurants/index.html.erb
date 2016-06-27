@@ -9,7 +9,7 @@
 <div class="row">
   <% @c_restaurants.each do |c_restaurant| %>
       <div class="col s6 center">
-        <%= link_to c_dental do %>
+        <%= link_to c_restaurant do %>
             <a href="<%= c_restaurant.link %>"><img src="<%= c_restaurant.img.url(:large) %>" alt="" class="responsive-img"></a>
         <% end %>
       </div>
