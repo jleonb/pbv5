@@ -1,13 +1,25 @@
-<div class="container">
-		
-	<% @slider_tops.each do |slider_top| %>
-
-	<%= slider_top.img.institucion %>
-	<%= slider_serv.link %>
-	<%= link_to 'Show', slider_serv %>
-	<%= link_to 'Edit', edit_slider_serv_path(slider_serv) %>
-	<%= link_to 'Destroy', slider_serv, method: :delete, data: { confirm: 'Are you sure?' } %>
-	<% end %>
-	<br>
-	<%= link_to 'New Slider serv', new_slider_serv_path %>
+<div id="slider_top">
+  <% @slider_tops.each do |slider_tops| %>
+      <a href="<%= slider_top.link %>"><img src="<%= slider_top.img.url.institucion(:large) %>" class="responsive-img"></a>
+  <% end %>
 </div>
+
+
+<div class="center">
+  <%= link_to estandars_path do %>
+      <span class="waves-effect waves-light btn"><i class="material-icons left">replay</i>VOLVER A TODOS LOS BENEFICIOS</span>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#slider_top').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      draggable: true,
+      mobileFirst: true,
+      responsive: true,
+    });
+  });
+</script>
