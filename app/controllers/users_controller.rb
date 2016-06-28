@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @slider_tops = SliderTop.all
   end
 
   # GET /users/1
