@@ -1,4 +1,4 @@
 class Institucion < ActiveRecord::Base
   has_many :users
-  has_many :premia
+  has_many :slider_tops
 end

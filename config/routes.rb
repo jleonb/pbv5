@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :slider_tops
   resources :slider_restaurants
   resources :c_restaurants
   devise_for :admins
@@ -30,7 +31,9 @@ Rails.application.routes.draw do
   resources :vermas
   resources :indices
 
-
   root 'inicios#index'
+
+
+
 
 end
