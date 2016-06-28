@@ -1,5 +1,13 @@
 <div class="container">
+		
+	<% @slider_tops.each do |slider_top| %>
 
-
-
+	<%= slider_top.img.institucion %>
+	<%= slider_serv.link %>
+	<%= link_to 'Show', slider_serv %>
+	<%= link_to 'Edit', edit_slider_serv_path(slider_serv) %>
+	<%= link_to 'Destroy', slider_serv, method: :delete, data: { confirm: 'Are you sure?' } %>
+	<% end %>
+	<br>
+	<%= link_to 'New Slider serv', new_slider_serv_path %>
 </div>
