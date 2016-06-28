@@ -69,6 +69,6 @@ class SliderTopsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def slider_top_params
-      params.require(:slider_top).permit(:link, :img)
+      params.require(:slider_top).permit(:link, :img, :n_contrato)
     end
 end
