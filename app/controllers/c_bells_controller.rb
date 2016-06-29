@@ -8,7 +8,6 @@ class CBellsController < ApplicationController
     @slider_bells = SliderBell.all
     @estandars = Estandar.all
     @user = current_user
-    @newsletters = Newsletter.all
   end
 
   # GET /c_bells/1
