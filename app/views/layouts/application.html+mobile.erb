@@ -17,6 +17,12 @@
 
 <%= render 'partials/footer' %>
 
+<% if user_signed_in %>
+  <%= render 'partials/credencial' %>  
+<% end %>
+
+</body>
+
 <script>
   $('.button-collapse').sideNav();
   $('.dropdown-button').dropdown();
@@ -25,12 +31,5 @@
     $('.modal-trigger').leanModal();
   });
 </script>
-
-<%= render 'partials/credencial' %>
-
-
-</body>
-
-
 
 </html>
