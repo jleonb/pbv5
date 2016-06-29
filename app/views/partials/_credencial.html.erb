@@ -21,7 +21,9 @@
     </p>
     <p class="white-text">
       <strong>Institucion:</strong>
-      <%= image_tag @user.institucion.logo %>
+      <div class="center">
+        <%= image_tag @user.institucion.logo, :width => "200" %>
+      </div>
     </p>
   </div>
   <div class="modal-footer">
