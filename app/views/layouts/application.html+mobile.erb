@@ -18,7 +18,8 @@
 <%= render 'partials/footer' %>
 
 <% if user_signed_in? %>
-  <%= render 'partials/credencial' %>  
+  <%= render 'partials/credencial' %>
+  <%= render 'partials/newsletter' %>  
 <% end %>
 
 </body>
@@ -28,7 +29,7 @@
   $('.dropdown-button').dropdown();
   $('.carousel').carousel();
   $(document).ready(function(){
-    $('.modal-trigger').leanModal();
+  $('.modal-trigger').leanModal();
   });
 </script>
 
