@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
 
   def index
   	@user = current_user
+    @newsletter = Newsletter.all
   end
  
 
