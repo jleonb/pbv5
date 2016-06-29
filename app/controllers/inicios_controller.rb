@@ -7,6 +7,7 @@ class IniciosController < ApplicationController
     @inicios = Inicio.all
     @sliders = Slider.all
     @estandar_destacados = EstandarDestacado.all
+    @user = current_user
   end
 
   # GET /inicios/1

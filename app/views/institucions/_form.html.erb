@@ -1,4 +1,4 @@
-<%= form_for(@institucion) do |f| %>
+<%= form_for @institucion, html: { multipart: true } do |f| %>
   <% if @institucion.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@institucion.errors.count, "error") %> prohibited this institucion from being saved:</h2>
@@ -14,6 +14,10 @@
   <div class="field">
     <%= f.label :n_contrato %><br>
     <%= f.text_field :n_contrato %>
+  </div>
+  <div class="field">
+    <%= f.label :logo %><br>
+    <%= f.file_field :logo %>
   </div>
   <div class="field">
     <%= f.label :nombre %><br>

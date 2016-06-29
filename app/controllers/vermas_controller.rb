@@ -5,6 +5,7 @@ class VermasController < ApplicationController
   # GET /vermas.json
   def index
     @vermas = Verma.all
+    @user = current_user
   end
 
   # GET /vermas/1

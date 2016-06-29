@@ -7,6 +7,7 @@ class CDeposController < ApplicationController
     @c_depos = CDepo.all
     @estandars = Estandar.all
     @slider_depos = SliderDepo.all
+    @user = current_user
   end
 
   # GET /c_depos/1

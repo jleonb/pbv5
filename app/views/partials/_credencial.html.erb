@@ -1,0 +1,32 @@
+<div id="mi_credencial" class="modal indigo darken-4">
+  <div class="modal-content">
+  	<div>
+  		<%= image_tag "icono.png", :width => "50", :alt => "logo", :class => "right" %>	
+  	</div>
+    <p>
+      <strong>Nº contrato:</strong>
+      <%= @user.n_contrato %>  
+    </p>
+    <p>
+      <strong>Nº socio:</strong>
+      <%= @user.id %>  
+    </p>
+    <p>
+      <strong>Nombre:</strong>
+      <%= @user.nombre %> <%= @user.a_paterno %> <%= @user.a_materno %>    
+    </p>
+    <p>
+      <strong>Teléfono:</strong>
+      <%= @user.telefono %>
+    </p>
+    <p>
+      <strong>Institucion:</strong>
+      
+    </p>
+
+  </div>
+  <div class="modal-footer">
+
+    <a href="#!" class=" modal-action modal-close waves-effect waves-light btn"><i class="material-icons left">clear</i>Cerrar</a>
+  </div>
+</div>

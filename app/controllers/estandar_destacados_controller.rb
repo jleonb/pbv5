@@ -5,6 +5,7 @@ class EstandarDestacadosController < ApplicationController
   # GET /estandar_destacados.json
   def index
     @estandar_destacados = EstandarDestacado.all
+    @user = current_user
   end
 
   # GET /estandar_destacados/1

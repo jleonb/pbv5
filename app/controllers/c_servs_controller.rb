@@ -7,6 +7,7 @@ class CServsController < ApplicationController
     @c_servs = CServ.all
     @slider_servs = SliderServ.all
     @estandars = Estandar.all
+    @user = current_user
   end
 
   # GET /c_servs/1

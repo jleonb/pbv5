@@ -70,6 +70,6 @@ class InstitucionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def institucion_params
-      params.require(:institucion).permit(:n_contrato, :nombre, :rut, :direccion, :comuna, :ciudad, :contacto, :telefono, :email)
+      params.require(:institucion).permit(:n_contrato, :nombre, :rut, :direccion, :comuna, :ciudad, :contacto, :telefono, :email, :logo)
     end
 end

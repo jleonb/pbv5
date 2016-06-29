@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160627182733) do
+ActiveRecord::Schema.define(version: 20160629154536) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",              default: "", null: false
@@ -164,15 +164,20 @@ ActiveRecord::Schema.define(version: 20160627182733) do
   end
 
   create_table "institucions", force: :cascade do |t|
-    t.string "n_contrato"
-    t.string "nombre"
-    t.string "rut"
-    t.string "direccion"
-    t.string "comuna"
-    t.string "ciudad"
-    t.string "contacto"
-    t.string "telefono"
-    t.string "email"
+    t.string   "n_contrato"
+    t.string   "nombre"
+    t.string   "rut"
+    t.string   "direccion"
+    t.string   "comuna"
+    t.string   "ciudad"
+    t.string   "contacto"
+    t.string   "telefono"
+    t.string   "email"
+    t.string   "logo"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
   end
 
   create_table "newsletters", force: :cascade do |t|

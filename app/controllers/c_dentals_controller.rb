@@ -7,6 +7,7 @@ class CDentalsController < ApplicationController
     @c_dentals = CDental.all
     @slider_dentals = SliderDental.all
     @estandars = Estandar.all
+    @user = current_user
   end
 
   # GET /c_dentals/1

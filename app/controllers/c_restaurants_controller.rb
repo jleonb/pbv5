@@ -7,6 +7,7 @@ class CRestaurantsController < ApplicationController
     @c_restaurants = CRestaurant.all
     @slider_restaurants = SliderRestaurant.all
     @estandars = Estandar.all
+    @user = current_user
   end
 
   # GET /c_restaurants/1
