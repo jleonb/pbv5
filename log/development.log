@@ -17428,3 +17428,15 @@ Processing by IniciosController#index as HTML
   Rendered partials/_navbar.html.erb (3.7ms)
   Rendered partials/_footer.html.erb (0.1ms)
 Completed 200 OK in 336ms (Views: 332.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-06-29 16:03:09 -0400
+Processing by IniciosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  [1m[35mEstandarDestacado Load (0.1ms)[0m  SELECT "estandar_destacados".* FROM "estandar_destacados"
+  Rendered inicios/index.html.erb within layouts/application (1.4ms)
+  Rendered application/_favicon.html.erb (34.6ms)
+  Rendered partials/_navbar.html.erb (3.8ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 280ms (Views: 276.3ms | ActiveRecord: 0.5ms)
