@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160629221645) do
+ActiveRecord::Schema.define(version: 20160630192342) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",              default: "", null: false
@@ -183,6 +183,14 @@ ActiveRecord::Schema.define(version: 20160629221645) do
     t.string   "newsletter_content_type"
     t.integer  "newsletter_file_size"
     t.datetime "newsletter_updated_at"
+  end
+
+  create_table "news", force: :cascade do |t|
+    t.string   "institucion_id"
+    t.string   "img"
+    t.string   "link"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "newsletters", force: :cascade do |t|

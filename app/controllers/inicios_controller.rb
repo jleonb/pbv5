@@ -8,7 +8,7 @@ class IniciosController < ApplicationController
     @sliders = Slider.all
     @estandar_destacados = EstandarDestacado.all
     @user = current_user
-    @newsletter = Newsletter.all
+    @newsletters = Newsletter.all
   end
 
   # GET /inicios/1

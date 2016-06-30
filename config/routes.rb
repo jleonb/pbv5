@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :news
   resources :slider_tops
   resources :slider_restaurants
   resources :c_restaurants
