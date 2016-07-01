@@ -11,41 +11,8 @@
 </head>
 <body>
 
-<%= render 'partials/navbar' %>
-
-<%= yield %>
-
-<%= render 'partials/footer' %>
-
-<script>
-  $('.button-collapse').sideNav();
-  $('.dropdown-button').dropdown();
-  $('.carousel').carousel();
-  $(document).ready(function(){
-    $('.modal-trigger').leanModal();
-  });
-</script>
-
-<!-- CREDENCIAL -->
-<div id="mi_credencial" class="modal">
-  <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-  </div>
-</div>
-
-<!-- NEWSLETTER -->
-<div id="newsletter" class="modal">
-  <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-  </div>
+<div class="container">
+  <% image_tag "pb_2.jpg", :class => "responsive-img" %>
 </div>
 
 </body>
