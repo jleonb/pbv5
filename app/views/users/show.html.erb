@@ -1,8 +1,8 @@
 <div class="container">
   
   <div id="slider_top">
-    <% @slider_top.user.each do |slider_top| %>
-      <a href="<%= @slider_top.link %>"><img src="<%= slider_top.img.url(:large) %>" class="responsive-img"></a>
+    <% @slider_top.each do |slider_top| %>
+      <a href="<%= @slider_top.institucion.link %>"><img src="<%= slider_top.institucion.img.url(:large) %>" class="responsive-img"></a>
     <% end %>
   </div>
 
