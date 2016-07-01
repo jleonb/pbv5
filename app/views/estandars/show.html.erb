@@ -81,13 +81,13 @@
 
   <br>
 
-
+<% if admin_signed_in? %>    
   <div class="center">
-  <%= link_to edit_estandar_path(@estandar) do %>
+    <%= link_to edit_estandar_path(@estandar) do %>
       <span class="waves-effect waves-light btn"><i class="material-icons left">edit</i>EDITAR</span>
-  <% end %>
+    <% end %>
   </div>
-
+<% end %>
 
 
 </div>
