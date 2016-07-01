@@ -1,10 +1,6 @@
 <div class="container">
   
-  <div id="slider_top">
-    <% @slider_top.each do {|slider_top| institucion.slider_top} %>
-      <a href="<%= @slider_top.link %>"><img src="<%= slider_top.img.url(:large) %>" class="responsive-img"></a>
-    <% end %>
-  </div>
+  <br>
 
   <div class="center">
     <%= link_to estandars_path do %>
