@@ -12,11 +12,14 @@
     <%= message_form.text_area :content, placeholder: "Mensaje..."%>
   </div>
   <br>
-  <div class="actions center">
+  <div class="actions center" id="botones_mailer">
     <span class="waves-effect waves-light btn">
       <i class="material-icons left">launch</i>
       <%= message_form.submit "ENVIAR" %>
     </span>
+    <%= link_to current_user_path do %>
+      <span class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>ATRAS</span>
+  <% end %>
   </div>
   <% end %>
 </div>
