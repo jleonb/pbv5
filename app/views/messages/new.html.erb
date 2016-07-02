@@ -1,14 +1,20 @@
 <div class="container">
-  <%= form_for @message, url: contact_path do |message_form| %>  
-    <div class="field">
-      <%= message_form.text_field :rut, placeholder: "Rut" %>
-    </div>
-    
-    <div class="field">
-      <%= message_form.text_area :content, placeholder: "Message"%>
-    </div>
-    <div class="field">
-      <%= message_form.submit "Enviar" %>
-    </div>
+  <br>
+  <h5 class="center">COMPLETE EL FORMULARIO</h5>
+  <br>
+  <%= form_for @message, url: contact_path do |message_form| %>
+  <div class="field">
+    <%= message_form.text_field :rut, placeholder: "Rut" %>
+  </div>
+  
+  <div class="field">
+    <%= message_form.text_area :content, placeholder: "Message"%>
+  </div>
+  <div class="actions center">
+    <span class="waves-effect waves-light btn">
+      <i class="material-icons left">launch</i>
+      <%= message_form.submit "ENVIAR" %>
+    </span>
+  </div>
   <% end %>
 </div>
