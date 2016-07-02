@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   resources :users
   resources :institucions do
     resources :users
+    resources :slider_tops
   end
   resources :c_dentals
   resources :vermas
@@ -34,7 +35,8 @@ Rails.application.routes.draw do
 
   root 'inicios#index'
 
-
+  get 'contact', to: 'messages#new', as: 'contact'
+  post 'contact', to: 'messages#create'
 
 
 end
