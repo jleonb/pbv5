@@ -1,6 +1,5 @@
-<%= form_for @message, url: contact_path do |message_form| %>
-  <fieldset>
-    
+<div class="container">
+  <%= form_for @message, url: contact_path do |message_form| %>  
     <div class="field">
       <%= message_form.text_field :rut, placeholder: "Rut" %>
     </div>
@@ -8,14 +7,8 @@
     <div class="field">
       <%= message_form.text_area :content, placeholder: "Message"%>
     </div>
-
-  </fieldset>
-  
-  <fieldset>
-
     <div class="field">
       <%= message_form.submit "Enviar" %>
     </div>
-
-  </fieldset>
-<% end %>
+  <% end %>
+</div>
