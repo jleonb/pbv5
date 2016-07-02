@@ -26,7 +26,7 @@ class Application < Rails::Application
         user_name: "no-responder@portalbeneficios.cl",
         password: "portalbeneficios",
         authentication: :plain,
-        enable_starttls_auto: true
+        enable_starttls_auto: false
     }
 
     config.action_mailer.default_url_options = {
