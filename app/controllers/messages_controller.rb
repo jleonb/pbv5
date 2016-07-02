@@ -2,9 +2,11 @@ class MessagesController < ApplicationController
 
   def new
     @message = Message.new
+    @user = current_user
   end
 
   def create
+  	@user = current_user
     @message = Message.new(message_params)
     
     if @message.valid?
