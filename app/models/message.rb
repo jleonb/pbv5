@@ -4,7 +4,7 @@ class Message
   include ActiveModel::Conversion
   include ActiveModel::Validations
 
-  attr_accessor :name, :email, :content
+  attr_accessor :rut, :content
 
   validates :rut,
     presence: true
