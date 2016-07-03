@@ -11,6 +11,7 @@ class EstandarsController < ApplicationController
   # GET /estandars/1
   # GET /estandars/1.json
   def show
+    @user = current_user
   end
 
   # GET /estandars/new
