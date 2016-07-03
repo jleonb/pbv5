@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @slider_tops = SliderTop.all
   end
 
   # GET /users/new
