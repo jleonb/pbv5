@@ -2,7 +2,7 @@
 	<br>
 	<div id="slider_top">
 		<% @slider_tops.each do |slider_top| %>
-		<a href="<%= slider_top.institucion.link %>"><img src="<%= slider_top.img.institucion.url(:large) %>" class="responsive-img"></a>
+		<a href="<%= institucion.slider_top.link %>"><img src="<%= institucion.slider_top.img.url(:large) %>" class="responsive-img"></a>
 		<% end %>
 	</div>
 	
