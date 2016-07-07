@@ -8,11 +8,24 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'/>
   <%= render 'favicon' %>
   <%= csrf_meta_tags %>
+  <style type="text/css">
+  body {
+    background: url(<%= image_tag "pb_2.jpg" %>) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  container {
+    padding: 500px 0px;
+  }
+
+  </style>
 </head>
 <body>
 
 <div class="container">
-  <%= image_tag "pb_2.jpg", :class => "responsive-img" %>
+
 </div>
 
 </body>
