@@ -1,0 +1,789 @@
+/*-----------------------------------------------------------------------------------
+	    (null)
+        Built with Blocs
+-----------------------------------------------------------------------------------*/
+/* line 7, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 15, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 17, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+a, button {
+  outline: none !important;
+}
+
+/* Prevent ugly blue glow on chrome and safari */
+/* line 19, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+#page-loading-blocs-notifaction {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100000;
+  background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+}
+
+/* = Blocs
+-------------------------------------------------------------- */
+/* line 24, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.bloc {
+  width: 100%;
+  clear: both;
+  background: 50% 50% no-repeat;
+  padding: 0 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 35, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.bloc .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* = Full Screen Blocs 
+-------------------------------------------------------------- */
+/* line 43, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.bloc-fill-screen {
+  padding-top: 0;
+  position: relative;
+  height: inherit;
+}
+
+/* line 48, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.bloc-fill-screen > .container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+/* line 54, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.bloc-fill-screen.bloc-group .bloc {
+  vertical-align: middle !important;
+}
+
+/* line 57, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge {
+  position: absolute;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transform: none;
+}
+
+/* line 65, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.bloc-fill-screen .fill-bloc-top-edge {
+  top: 0;
+}
+
+/* line 68, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.bloc-fill-screen .fill-bloc-bottom-edge {
+  top: initial;
+  bottom: 20px;
+}
+
+/* line 72, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.blocs-hero-btn-dwn {
+  width: 58px;
+  height: 58px;
+  display: block;
+  margin: 0 auto;
+  line-height: 58px;
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.6);
+  border: 0;
+}
+
+/* line 86, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.blocs-hero-btn-dwn:hover {
+  color: white;
+}
+
+/* Light theme */
+/* line 93, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.d-bloc .panel, .l-bloc {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 96, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.d-bloc .panel button:hover, .l-bloc button:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 99, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.l-bloc .icon-round, .l-bloc .icon-square, .l-bloc .icon-rounded, .l-bloc .icon-semi-rounded-a, .l-bloc .icon-semi-rounded-b {
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 102, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.d-bloc .panel .divider-h span, .l-bloc .divider-h span {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 105, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.d-bloc .panel .a-btn, .l-bloc .a-btn, .l-bloc .navbar a, .l-bloc .navbar-brand, .l-bloc a .icon-sm, .l-bloc a .icon-md, .l-bloc a .icon-lg, .l-bloc a .icon-xl, .l-bloc h1 a, .l-bloc h2 a, .l-bloc h3 a, .l-bloc h4 a, .l-bloc h5 a, .l-bloc h6 a, .l-bloc p a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 108, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.d-bloc .panel .a-btn:hover, .l-bloc .a-btn:hover, .l-bloc .navbar a:hover, .l-bloc .navbar-brand:hover, .l-bloc a:hover .icon-sm, .l-bloc a:hover .icon-md, .l-bloc a:hover .icon-lg, .l-bloc a:hover .icon-xl, .l-bloc h1 a:hover, .l-bloc h2 a:hover, .l-bloc h3 a:hover, .l-bloc h4 a:hover, .l-bloc h5 a:hover, .l-bloc h6 a:hover, .l-bloc p a:hover {
+  color: black;
+}
+
+/* line 111, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.l-bloc .navbar-toggle .icon-bar {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 114, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.d-bloc .panel .btn-wire, .d-bloc .panel .btn-wire:hover, .l-bloc .btn-wire, .l-bloc .btn-wire:hover {
+  color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Bloc text custom styling */
+/* line 121, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+#bloc-0 h5 {
+  font-size: 30px;
+}
+
+/* line 124, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+#bloc-0 h3 {
+  font-size: 20px;
+}
+
+/* = NavBar
+-------------------------------------------------------------- */
+/* line 131, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.navbar {
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+/* line 135, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.navbar-brand {
+  height: auto;
+  padding: 15px 15px;
+  font-size: 25px;
+  font-weight: normal;
+  font-weight: 600;
+}
+
+/* line 142, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.navbar-brand img {
+  max-height: 200px;
+  margin: 0 5px 0 0;
+  display: inline;
+}
+
+/* line 147, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.navbar-brand {
+  padding: 15px 15px;
+}
+
+/* line 150, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.navbar .nav {
+  padding-top: 2px;
+  margin-right: -16px;
+  float: right;
+  z-index: 1;
+}
+
+/* line 156, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.nav > li {
+  float: left;
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+/* line 161, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.navbar-nav .open .dropdown-menu > li > a {
+  text-align: inherit;
+}
+
+/* line 164, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.nav > li a:hover, .nav > li a:focus {
+  background: transparent;
+}
+
+/* line 167, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.navbar-toggle {
+  margin: 10px 10px 0 0;
+  border: 0px;
+}
+
+/* line 171, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+
+/* line 174, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.navbar-toggle .icon-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 26px;
+}
+
+/* Inverted navbar */
+/* line 180, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.nav-invert .navbar .nav {
+  float: left;
+}
+
+/* line 183, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.nav-invert .navbar-header, .nav-invert .navbar-brand {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  /* line 187, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .site-navigation {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    -webkit-transform: translateY(-50%);
+  }
+
+  /* line 194, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .nav > li .dropdown-menu a, .nav > li .dropdown-menu a:hover {
+    color: #484848;
+  }
+
+  /* line 197, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .nav-invert .site-navigation {
+    left: 20px;
+    right: 0;
+  }
+
+  /* line 201, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .nav-center {
+    text-align: center;
+  }
+
+  /* line 204, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .nav-center .navbar-header {
+    width: 100%;
+  }
+
+  /* line 207, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .nav-center .navbar-header, .nav-center .navbar-brand, .nav-center .nav > li {
+    float: none;
+    display: inline-block;
+  }
+
+  /* line 211, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .nav-center .site-navigation {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+/* line 217, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.nav > li > .dropdown a {
+  background: none !important;
+  display: block;
+  padding: 14px 15px;
+}
+
+/* line 223, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+nav .caret {
+  margin: 0 5px;
+}
+
+/* Dropdown Menus SubMenu */
+/* line 227, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.dropdown-menu .dropdown-menu {
+  top: -8px;
+  left: 100%;
+}
+
+/* line 231, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.dropdown-menu .dropmenu-flow-right {
+  top: 100%;
+  left: 0;
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 238, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.dropdown-menu .dropdown span {
+  border: 4px solid black;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  margin: 6px -5px 0 0 !important;
+  float: right;
+}
+
+/* = Bric adjustment margins
+-------------------------------------------------------------- */
+/* line 250, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.mg-sm {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* line 254, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.mg-lg {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* = Buttons
+-------------------------------------------------------------- */
+/* line 262, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.btn {
+  margin: 0 5px 5px 0;
+}
+
+/* line 265, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.btn.pull-right {
+  margin: 0 0 5px 5px;
+}
+
+/* line 268, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.btn-d, .btn-d:hover, .btn-d:focus {
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Prevent ugly blue glow on chrome and safari */
+/* line 274, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+button {
+  outline: none !important;
+}
+
+/* line 278, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.btn .caret {
+  margin: 0 0 0 5px;
+}
+
+/* line 279, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.dropdown a .caret {
+  margin: 0 0 0 5px;
+}
+
+/* line 280, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.btn-dropdown .dropdown-menu .dropdown {
+  padding: 3px 20px;
+}
+
+/* = Text & Icon Styles
+-------------------------------------------------------------- */
+/* line 288, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.sm-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* line 293, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer {
+  border-radius: 0;
+}
+
+/* line 296, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.panel-rd {
+  border-radius: 30px;
+}
+
+/* line 299, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.panel-rd .panel-heading {
+  border-radius: 29px 29px 0 0;
+}
+
+/* line 302, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.panel-rd .panel-footer {
+  border-radius: 0 0 29px 29px;
+}
+
+/* iFrame */
+/* line 310, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+iframe {
+  border: 0;
+}
+
+/* ScrollToTop button */
+/* line 317, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.scrollToTop {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  z-index: 500;
+  transition: all .3s ease-in-out;
+}
+
+/* line 327, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.scrollToTop span {
+  margin-top: 6px;
+}
+
+/* line 330, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.showScrollTop {
+  font-size: 14px;
+  opacity: 1;
+}
+
+/* = iPhone 5 Devices
+-------------------------------------------------------------- */
+/* line 337, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.blocsapp-device-iphone5 {
+  background-size: 384px 803px;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  display: block;
+  width: 384px;
+  height: 803px;
+  margin: 0 auto;
+}
+
+/* line 346, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.blocsapp-device-iphone5 img {
+  width: 320px;
+  height: 568px;
+  margin: 0 auto;
+}
+
+/* line 351, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.blocsapp-device-iphone5.iphone-white {
+  background-image: url(/assets/Apple-iPhone-5c-White-47be35b005c29f2e25f9beaf8bf2ed7998bc6f1599b07f961a70a6657ed27320.png);
+}
+
+/* = Custom Styling
+-------------------------------------------------------------- */
+/* line 359, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+h1, h2, h3, h4, h5, h6, p, label, .btn, a {
+  font-family: "Helvetica";
+}
+
+/* line 362, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.container {
+  max-width: 1170px;
+}
+
+/* line 365, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.valley-hero-text-s {
+  font-size: 60px;
+}
+
+/* line 368, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.valley-hero-text-sub-s {
+  font-size: 34px;
+}
+
+/* line 371, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.hero-text-vc {
+  margin-top: 50%;
+}
+
+/* line 374, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.mount-italy-hero-text-s {
+  font-size: 60px;
+}
+
+/* line 377, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.mount-italy-hero-text-sub-s {
+  font-size: 34px;
+}
+
+/* = Colour
+-------------------------------------------------------------- */
+/* Background colour styles */
+/* line 386, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.bgc-white {
+  background-color: #ffffff;
+}
+
+/* Text colour styles */
+/* line 391, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.tc-white {
+  color: #ffffff !important;
+}
+
+/* Bloc image backgrounds */
+/* line 397, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+.bg-fondo {
+  background-image: url(/assets/fondo-9c5bbc16d44649b4982167d84d3a567878736b64ae5d59f01afc98c86606afbb.jpg);
+}
+
+/* = Mobile adjustments 
+-------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  /* line 407, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .bloc {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* line 411, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .bloc.full-width-bloc {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  /* line 418, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .container {
+    width: 100%;
+  }
+
+  /* line 419, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .b-parallax {
+    background-attachment: scroll;
+  }
+
+  /* line 420, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .page-container, #hero-bloc {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Prevent unwanted side scroll on mobile */
+}
+@media (max-width: 767px) {
+  /* line 424, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .page-container {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* line 428, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  h1, h2, h3, h4, h5, h6, p {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* line 432, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  #hero-bloc h1 {
+    font-size: 40px;
+  }
+
+  /* line 435, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  #hero-bloc h2 {
+    font-size: 34px;
+  }
+
+  /* line 438, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  #hero-bloc h3 {
+    font-size: 25px;
+  }
+
+  /* line 441, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .bloc {
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-background-size: auto 200%;
+    -moz-background-size: auto 200%;
+    -o-background-size: auto 200%;
+    background-size: auto 200%;
+  }
+
+  /* line 449, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .b-parallax {
+    background-attachment: scroll;
+  }
+
+  /* line 452, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .navbar .nav {
+    padding-top: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    float: none !important;
+  }
+
+  /* line 457, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .navbar.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 461, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .site-navigation {
+    position: inherit;
+    transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+  }
+
+  /* line 467, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .nav > li {
+    margin-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    text-align: left;
+    padding-left: 15px;
+    width: 100%;
+  }
+
+  /* line 475, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .nav > li:hover {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  /* line 478, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .dropdown .dropdown a .caret {
+    float: none;
+    margin: 5px 0 0 10px !important;
+    border: 4px solid black;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+
+  /* line 487, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  #hero-bloc .navbar .nav {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  /* line 490, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  #hero-bloc .navbar .nav a {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  /* line 493, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .hero {
+    padding: 50px 0;
+  }
+
+  /* line 496, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .hero-nav {
+    left: -1px;
+    right: -1px;
+  }
+
+  /* line 500, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .navbar-collapse {
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 506, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .navbar-brand img {
+    max-height: 40px;
+    width: auto;
+    margin: -10px 10px 0 0;
+  }
+
+  /* line 511, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .nav-invert .navbar-header {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 515, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .nav-invert .navbar-toggle {
+    float: left;
+  }
+
+  /* line 518, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .bloc-group .bloc {
+    display: block;
+    width: 100%;
+  }
+
+  /* line 522, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 526, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .bloc-xxl, .bloc-xl, .bloc-lg {
+    padding: 40px 0;
+  }
+
+  /* line 529, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .bloc-sm, .bloc-md {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 533, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .a-block {
+    padding: 0 10px;
+  }
+
+  /* line 536, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .btn-dwn {
+    display: none;
+  }
+
+  /* line 539, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .voffset {
+    margin-top: 5px;
+  }
+
+  /* line 542, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .voffset-md {
+    margin-top: 20px;
+  }
+
+  /* line 545, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .voffset-lg {
+    margin-top: 30px;
+  }
+
+  /* line 548, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  form {
+    padding: 5px;
+  }
+
+  /* line 551, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .close-lightbox {
+    display: inline-block;
+  }
+
+  /* line 555, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  /* line 559, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .full-width-bloc .col-xs-2, .full-width-bloc .col-sm-2, .full-width-bloc .col-md-2, .full-width-bloc .col-lg-2, .full-width-bloc .col-xs-3, .full-width-bloc .col-sm-3, .full-width-bloc .col-md-3, .full-width-bloc .col-lg-3, .full-width-bloc .col-xs-4, .full-width-bloc .col-sm-4, .full-width-bloc .col-md-4, .full-width-bloc .col-lg-4, .full-width-bloc .col-xs-5, .full-width-bloc .col-sm-5, .full-width-bloc .col-md-5, .full-width-bloc .col-lg-5, .full-width-bloc .col-xs-6, .full-width-bloc .col-sm-6, .full-width-bloc .col-md-6, .full-width-bloc .col-lg-6, .full-width-bloc .col-xs-7, .full-width-bloc .col-sm-7, .full-width-bloc .col-md-7, .full-width-bloc .col-lg-7, .full-width-bloc .col-xs-8, .full-width-bloc .col-sm-8, .full-width-bloc .col-md-8, .full-width-bloc .col-lg-8, .full-width-bloc .col-xs-9, .full-width-bloc .col-sm-9, .full-width-bloc .col-md-9, .full-width-bloc .col-lg-9, .full-width-bloc .col-xs-10, .full-width-bloc .col-sm-10, .full-width-bloc .col-md-10, .full-width-bloc .col-lg-10, .full-width-bloc .col-xs-11, .full-width-bloc .col-sm-11, .full-width-bloc .col-md-11, .full-width-bloc .col-lg-11, .full-width-bloc .col-xs-12, .full-width-bloc .col-sm-12, .full-width-bloc .col-md-12, .full-width-bloc .col-lg-12 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* line 563, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .video-bg-contianer {
+    display: none;
+  }
+
+  /* line 566, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .blocsapp-device-iphone5 {
+    background-size: 216px 425px;
+    padding-top: 60px;
+    width: 216px;
+    height: 425px;
+  }
+
+  /* line 572, /Users/jaime/Library/Mobile Documents/com~apple~CloudDocs/WebFrame/portal_beneficios/pbv5/app/assets/stylesheets/resoluciones.scss */
+  .blocsapp-device-iphone5 img {
+    width: 180px;
+    height: 320px;
+  }
+}
