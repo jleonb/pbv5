@@ -3,6 +3,7 @@
         Built with Blocs
 -----------------------------------------------------------------------------------*/
 
+
 body{
 	margin:0;
 	padding:0;
@@ -348,7 +349,7 @@ iframe{
 	margin: 0 auto;
 }
 .blocsapp-device-iphone5.iphone-white{
-    background-image: asset-url("Apple-iPhone-5c-White.png", image)
+	background-image: image-url("Apple-iPhone-5c-White.png");
 
 }
 
@@ -394,7 +395,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* Bloc image backgrounds */
 
 .bg-fondo{
-    background-image: asset-url("fondo.jpg", image)
+	background-image:image-url('fondo.jpg');
 }
 
 
