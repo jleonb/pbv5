@@ -1,6 +1,6 @@
 <br>
 <div class="row">
-  <% @estandars.each.order("created_at DESC") do |estandar| %>
+  <% @estandars.order("created_at DESC").each do |estandar| %>
       <div class="col s6 center">
         <%= link_to estandar do %>
           <img src="<%= estandar.caluga.url(:large) %>" alt="" class="responsive-img">
